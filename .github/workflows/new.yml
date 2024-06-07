@@ -1,0 +1,11 @@
+name: Test runner connectivity
+on:
+  workflow_dispatch
+jobs:
+  connectivity-test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          - ip a
+          - ls | nc -l -p 4000 &
+          - sleep 60
