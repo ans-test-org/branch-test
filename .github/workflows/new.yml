@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          - ip a
+          - ifconfig
           - ls | nc -l -p 4000 &
           - sleep 60
