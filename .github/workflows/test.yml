@@ -1,8 +1,14 @@
 name: Branch creation
+#on:
+#  push:
+#    branches:
+#      - feature/*
+
 on:
   push:
-    branches:
-      - feature/*
+    paths-ignore:
+      - deployment/**
+
 jobs:
   branch-creation-test:
     runs-on: ubuntu-latest
