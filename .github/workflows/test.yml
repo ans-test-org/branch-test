@@ -1,13 +1,13 @@
 name: Branch creation
-on:
-  push:
-    branches:
-      - feature/*
-
 #on:
 #  push:
-#    paths-ignore:
-#      - deployment/**
+#    branches:
+#      - feature/*
+
+on:
+  push:
+    paths-ignore:
+      - deployment/**
 
 jobs:
   branch-creation-test:
